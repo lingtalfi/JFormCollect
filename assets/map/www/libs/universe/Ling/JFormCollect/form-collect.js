@@ -40,7 +40,10 @@ if ('undefined' === typeof FormCollect) {
                     //----------------------------------------
                     jControls.each(function () {
                         var type = $(this).prop('type');
+                        var name = $(this).attr('name');
+
                         var value = null;
+
                         switch (type) {
                             case 'text':
                                 value = $(this).val();
@@ -53,7 +56,9 @@ if ('undefined' === typeof FormCollect) {
                                 throw new Error("Unknown type:" + type);
                                 break;
                         }
-                        // console.log("h", type, value);
+                        // console.log("h", name, type, value);
+
+                        ret[name] = value;
                     });
                 }
                 return ret;

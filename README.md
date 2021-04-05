@@ -37,6 +37,7 @@ How to use
 
 
 Add the **form-collect** css class to the controls you want to collect the data of.
+Also, make sure they have a **name** html attribute.
 
 Note: so far, the recognized controls are:
 
@@ -74,6 +75,10 @@ The options you pass to the **collect** method are:
 History Log
 =============
 
+- 1.0.1 -- 2021-04-05
+
+    - fix collect method not returning the map
+    
 - 1.0.0 -- 2021-04-05
 
     - initial commit
