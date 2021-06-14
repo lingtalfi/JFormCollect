@@ -1,6 +1,6 @@
 JFormCollect
 ===========
-2021-04-05 -> 2021-06-11
+2021-04-05 -> 2021-06-14
 
 
 
@@ -77,6 +77,10 @@ The options you pass to the **collect** method are:
 History Log
 =============
 
+- 1.0.5 -- 2021-06-14
+
+    - add handling of checkbox type
+  
 - 1.0.4 -- 2021-06-11
 
     - add handling for hidden type

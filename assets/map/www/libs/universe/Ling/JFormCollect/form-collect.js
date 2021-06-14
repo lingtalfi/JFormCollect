@@ -54,6 +54,9 @@ if ('undefined' === typeof FormCollect) {
                             case 'select-multiple':
                                 value = $(this).val();
                                 break;
+                            case 'checkbox':
+                                value = $(this).prop("checked");
+                                break;
                             default:
                                 throw new Error("Unknown type:" + type);
                                 break;
