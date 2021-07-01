@@ -42,6 +42,10 @@ if ('undefined' === typeof FormCollect) {
                         var type = $(this).prop('type');
                         var name = $(this).attr('name');
 
+                        if("undefined" === typeof name){
+                            throw new Error("Undefined name html attribute for control of type " + type, $(this));
+                        }
+
                         var value = null;
 
                         switch (type) {

@@ -1,6 +1,6 @@
 JFormCollect
 ===========
-2021-04-05 -> 2021-06-22
+2021-04-05 -> 2021-07-01
 
 
 
@@ -77,6 +77,10 @@ The options you pass to the **collect** method are:
 History Log
 =============
 
+- 1.0.7 -- 2021-07-01
+
+    - now throws an exception if the name of a control isn't defined
+  
 - 1.0.6 -- 2021-06-22
 
     - add handling of input=email type
