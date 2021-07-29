@@ -1,6 +1,6 @@
 JFormCollect
 ===========
-2021-04-05 -> 2021-07-01
+2021-04-05 -> 2021-07-29
 
 
 
@@ -33,7 +33,7 @@ Or just download it and place it where you want otherwise.
 
 How to use
 ===========
-2021-04-05 -> 2021-05-11
+2021-04-05 -> 2021-07-29
 
 
 Add the **form-collect** css class to the controls you want to collect the data of.
@@ -45,6 +45,7 @@ Note: so far, the recognized controls are:
 - input password
 - input hidden
 - select
+- custom controls (add data-type="custom", and data-name="whatever" to create a custom control)
 
 
 
@@ -76,6 +77,10 @@ The options you pass to the **collect** method are:
 
 History Log
 =============
+
+- 1.0.8 -- 2021-07-29
+
+    - add handling of custom controls
 
 - 1.0.7 -- 2021-07-01
 

@@ -39,10 +39,20 @@ if ('undefined' === typeof FormCollect) {
                     // COLLECT THE DATA
                     //----------------------------------------
                     jControls.each(function () {
-                        var type = $(this).prop('type');
-                        var name = $(this).attr('name');
+                        var type, name;
 
-                        if("undefined" === typeof name){
+                        type = $(this).attr("data-type");
+                        if ("undefined" === typeof type) {
+                            type = $(this).prop('type');
+                        }
+
+
+                        name = $(this).attr("data-name");
+                        if ("undefined" === typeof name) {
+                            name = $(this).attr('name');
+                        }
+
+                        if ("undefined" === typeof name) {
                             throw new Error("Undefined name html attribute for control of type " + type, $(this));
                         }
 
@@ -61,6 +71,9 @@ if ('undefined' === typeof FormCollect) {
                                 break;
                             case 'checkbox':
                                 value = $(this).prop("checked");
+                                break;
+                            case 'custom':
+                                value = $(this).attr("data-value");
                                 break;
                             default:
                                 throw new Error("Unknown type:" + type);
